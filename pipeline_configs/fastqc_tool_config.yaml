@@ -1,0 +1,9 @@
+---
+output_dir: /cluster/projects/pughlab/projects/yip_exomes/pipeline_output/fastqc
+parameters:
+    fastqc:
+        mem: 4G
+        time: '24:00:00'
+    md5sum:
+        mem: 2G
+        time: '24:00:00'

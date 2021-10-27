@@ -1,0 +1,724 @@
+---
+T1_9:
+    T1_recurrance:
+        type: tumour
+        libraries:
+            T1_recurrance:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T1/T1-exome_S1_L004_R2_001.fastq.gz
+    T9_primary:
+        type: tumour
+        libraries:
+            T9_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9/T9-exome_S8_L004_R2_001.fastq.gz
+    T9_normal:
+        type: normal
+        libraries:
+            T9_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T9-N/T9-N-exome_S4_L004_R2_001.fastq.gz
+T2:
+    T2_primary:
+        type: tumour
+        libraries:
+            T2_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2/T2-exome_S2_L004_R2_001.fastq.gz
+    T2_normal:
+        type: normal
+        libraries:
+            T2_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N/T2-N-exome_S9_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T2-N2/T2-N-exome_S9_L004_R2_001.fastq.gz
+T4:
+    T4_primary:
+        type: tumour
+        libraries:
+            T4_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4/T4-exome_S3_L004_R2_001.fastq.gz
+    T4_normal:
+        type: normal
+        libraries:
+            T4_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T4-N/T4-N-exome_S1_L004_R2_001.fastq.gz
+T5_10:
+    T5_recurrance:
+        type: tumour
+        libraries:
+            T5_recurrance:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T5/T5-exome_S4_L004_R2_001.fastq.gz
+    T10_primary:
+        type: tumour
+        libraries:
+            T10_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10/T10-exome_S9_L004_R2_001.fastq.gz
+    T10_normal:
+        type: normal
+        libraries:
+            T10_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T10-N/T10-N-exome_S5_L004_R2_001.fastq.gz
+T6:
+    T6_primary:
+        type: tumour
+        libraries:
+            T6_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6/T6-exome_S5_L004_R2_001.fastq.gz
+    T6_normal:
+        type: normal
+        libraries:
+            T6_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T6-N/T6-N-exome_S2_L004_R2_001.fastq.gz
+T7:
+    T7_recurrance:
+        type: tumour
+        libraries:
+            T7_recurrance:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7/T7-exome_S6_L004_R2_001.fastq.gz
+    T7_normal:
+        type: normal
+        libraries:
+            T7_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T7-N/T7-N-exome_S3_L004_R2_001.fastq.gz
+T8:
+    T8_primary:
+        type: tumour
+        libraries:
+            T8_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T8/T8-exome_S7_L004_R2_001.fastq.gz
+T11:
+    T11_primary:
+        type: tumour
+        libraries:
+            T11_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11/T11-exome_S1_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-2/T11-exome_S1_L004_R2_001.fastq.gz
+    T11_normal:
+        type: normal
+        libraries:
+            T11_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T11-N/T11-N-exome_S6_L004_R2_001.fastq.gz
+T12_13:
+    T12_recurrance:
+        type: tumour
+        libraries:
+            T12_recurrance:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12/T12-exome_S2_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T12-2/T12-exome_S2_L004_R2_001.fastq.gz
+    T13_primary:
+        type: tumour
+        libraries:
+            T13_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13/T13-exome_S3_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-2/T13-exome_S3_L004_R2_001.fastq.gz
+    T13_normal:
+        type: normal
+        libraries:
+            T13_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T13-N/T13-N-exome_S7_L004_R2_001.fastq.gz
+T14:
+    T14_primary:
+        type: tumour
+        libraries:
+            T14_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14/T14-exome_S4_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T14-2/T14-exome_S4_L004_R2_001.fastq.gz
+T15_16:
+    T15_recurrance:
+        type: tumour
+        libraries:
+            T15_recurrance:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15/T15-exome_S5_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T15-2/T15-exome_S5_L004_R2_001.fastq.gz
+    T16_primary:
+        type: tumour
+        libraries:
+            T16_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16/T16-exome_S6_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-2/T16-exome_S6_L004_R2_001.fastq.gz
+    T16b_primary:
+        type: tumour
+        libraries:
+            T16b_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b/T16-b-exome_S7_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16b-2/T16-b-exome_S7_L004_R2_001.fastq.gz
+    T16_normal:
+        type: normal
+        libraries:
+            T16_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T16-N/T16-N-exome_S8_L004_R2_001.fastq.gz
+T17:
+    T17_primary:
+        type: tumour
+        libraries:
+            T17_primary:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17/T17-exome_S8_L004_R2_001.fastq.gz
+                    L005:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L001_R2_001.fastq.gz
+                    L006:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L002_R2_001.fastq.gz
+                    L007:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L003_R2_001.fastq.gz
+                    L008:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-2/T17-exome_S8_L004_R2_001.fastq.gz
+    T17_normal:
+        type: normal
+        libraries:
+            T17_normal:
+                runlanes:
+                    L001:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L001_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L001_R2_001.fastq.gz
+                    L002:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L002_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L002_R2_001.fastq.gz
+                    L003:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L003_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L003_R2_001.fastq.gz
+                    L004:
+                        fastq:
+                            R1: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L004_R1_001.fastq.gz
+                            R2: /cluster/projects/pughlab/external_data/YipExome/T17-N/T17-N-exome_S9_L004_R2_001.fastq.gz
