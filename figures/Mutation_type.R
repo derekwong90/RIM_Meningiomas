@@ -3,7 +3,7 @@ library(plyr)
 library(reshape2)
 
 ### Set working directories
-setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/mutation_type")
+setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/mutation_count")
 path <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/somatic"
 samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip_exome_sample_list.txt"
 
@@ -68,8 +68,8 @@ var_plot <- ggplot() +
         axis.text.x = element_text(size = 15, angle = 90, vjust = 0.5),
         axis.text.y = element_text(size = 15),
         axis.title = element_text(size = 15)) + 
-  scale_y_continuous(name = "Count", limits=c(-40, 400), expand = c(0,0),
-                     sec.axis = sec_axis(trans = ~./100, name = "TMB")) + 
+  scale_y_continuous(name = "SNV Count", limits=c(-40, 400), expand = c(0,0),
+                     sec.axis = sec_axis(trans = ~./100, name = "TMB (Non-Synonymous SNVs/Mb)")) + 
   annotate(geom = "curve", x = 12, y = -1, xend = 8, yend = -1, curvature = -0.4, arrow = arrow(length = unit(2, "mm"))) +
   annotate(geom = "curve", x = 13, y = -1, xend = 9, yend = -1, curvature = -0.4, arrow = arrow(length = unit(2, "mm"))) +
   annotate(geom = "curve", x = 3, y = -1, xend = 5, yend = -1, curvature = 0.6, arrow = arrow(length = unit(2, "mm"))) +

@@ -1,0 +1,17 @@
+STY_code	exome	rna
+T1	pass	pass
+T4	pass	pass
+T5	pass	pass
+T6	pass	pass
+T7	pass	fail
+T9	pass	pass
+T10	pass	pass
+T11	pass	pass
+T12	pass	pass
+T13	pass	pass
+T15	pass	pass
+T16	pass	pass
+T17	pass	pass
+T2	pass	pass
+T8	fail	pass
+T14	fail	pass

@@ -4,7 +4,7 @@ library(circlize)
 library(matrixStats)
 
 ### Set working variables ###
-setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/copy_number")
+setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/Figure 1D")
 path <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/copy_number"
 samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip_exome_sample_list.txt"
 project <- "Yip_exomes"

@@ -1,0 +1,17 @@
+EPIC_code	STY_code	Parent	Type	Grade	Subtype	Sex	methly	Dx	Recurrance	Initial cancer diagnosis
+STY6	T1	T9	Recurrance	I	transitional	female	1	meningioma	yes	infant ALL
+STY15	T4	T4	Primary	II	transitional	female	2	atypical meningioma	no	ALL
+STY2	T5	T10	Recurrance	II	fibrous	male	1	atypical meningioma	yes	ALL
+STY8	T6	T6	Primary	I	transitional	female	2	meningioma	no	ALL
+STY3	T7	T7	Primary	II	transitional	female	1	atypical meningioma	yes	ALL
+STY16	T8		Primary	I	fibrous	male	1	meningioma	no	lymphoblastic lynphoma
+STY5	T9	T9	Primary	I	transitional	female	1	meningioma	yes	infant ALL
+STY2	T10	T5	Primary	II	fibrous	male		atypical meningioma	yes	ALL
+STY7	T11	T11	Primary	I	fibrous	male	2	meningioma	no	neuroblastoma
+STY10	T12	T13	Recurrance	II	meningothelial	male	2	atypical meningioma	yes	ALL
+STY9	T13	T13	Primary	II	meningothelial	male	2	atypical meningioma	yes	ALL
+STY17	T14		Primary	I		male	1	original path report stated atypical, not atypical on secondary review although unclear if specimen he reviewed was original or recurrence	yes	ALL
+STY13	T15	T16	Recurrance	I	transitional	female	1	meningioma	yes	ALL
+STY11	T16	T16	Primary	I	transitional	female	1	meningioma	yes	ALL
+STY14	T17	T17	Primary	II	chordoid	female	2	chordoid meningioma	no	ALL
+STY4	T2	T2	Primary	III	fibrous	female	2	anaplastic meningioma	yes	ALL

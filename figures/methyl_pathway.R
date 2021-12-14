@@ -34,13 +34,14 @@ contMatrix <- makeContrasts(group1-group2,
 ### Find Differentially Methylated probes
 fit2 <- contrasts.fit(fit, contMatrix)
 fit2 <- eBayes(fit2)
-summary(decideTests(fit2))
+summary <- summary(decideTests(fit2))
+write.table(summary, file.path(path, "differentially_methylated_summary.txt"), sep = "\t", row.names = FALSE)
 
 ### Extract list of DMPs
 DMPs <- topTable(fit2, num=Inf, coef=1)
 sigDMPs <- DMPs[DMPs$adj.P.Val <= 0.05, ]
 sigDMPs_up <- sigDMPs[sigDMPs$logFC > 0, ]
-sigDMPs_down <- sigDMPs[sigDMPs$logFC < 0, ]
+sigDMPs_down <- sigDMPs[sigDMPs$logFC < -0, ]
 
 ### Do functional pathway analysis
 all <- row.names(DMPs)
@@ -85,7 +86,7 @@ gst_plot <- ggplot(gst_dys, aes(x = TERM, y = logFDR, fill = dir)) +
              space = "free") +
   xlab("") + 
   ylab("FDR (-log10)") +
-  ggtitle("Gene Ontology Term") + 
+  ggtitle("Cluster 1 vs Cluster 2") + 
   scale_fill_manual(values = c("#FB9A99", "#A6CEE3")) +
   theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20), 
         axis.line = element_line(colour = "black"),

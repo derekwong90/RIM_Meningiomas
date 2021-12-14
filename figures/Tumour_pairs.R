@@ -1,9 +1,10 @@
 library(tidyverse)
 library(plyr)
 library(reshape2)
+library(gridExtra)
 
 ### Set working directories
-setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/mutation_comparison")
+setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/Figure 2A")
 path <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/somatic"
 samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip_exome_sample_list.txt"
 
@@ -45,6 +46,12 @@ T12_13[is.na(T12_13)] <- 0
 T15_16 <- merge(T15, T16, by = c("Hugo_Symbol", "Chromosome", "Start_Position", "Reference_Allele", "Tumor_Seq_Allele2"), all = TRUE)
 T15_16[is.na(T15_16)] <- 0
 
+### Set colors
+T1_9$color <- ifelse(T1_9$vaf.x > 0 & T1_9$vaf.y > 0, "yes", "no")
+T5_10$color <- ifelse(T5_10$vaf.x > 0 & T5_10$vaf.y > 0, "yes", "no")
+T12_13$color <- ifelse(T12_13$vaf.x > 0 & T12_13$vaf.y > 0, "yes", "no")
+T15_16$color <- ifelse(T15_16$vaf.x > 0 & T15_16$vaf.y > 0, "yes", "no")
+
 ### Make annotations
 T1 <- nrow(T1)
 T9 <- nrow(T9)
@@ -69,7 +76,7 @@ theme <- theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20),
                panel.grid.minor = element_blank(),
                panel.border = element_blank(),
                panel.background = element_blank(),
-               legend.position=c(0.75, 0.75),
+               legend.position="none",
                legend.title = element_text(size = 15), 
                legend.text = element_text(size = 12), 
                axis.text.x = element_text(size = 15),
@@ -81,56 +88,64 @@ theme <- theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20),
                                     l = 5)) # Left mar)
 
 ### Plot Mutation Counts
-T1_9_plot <- ggplot(T1_9, aes(x = vaf.y, y = vaf.x)) + 
-  geom_point(pch = 21, fill = "grey", alpha = 0.5) +
-  xlab("Primary (T9)") + 
-  ylab("Recurrance (T1)") +
+T1_9_plot <- ggplot(T1_9, aes(x = vaf.y, y = vaf.x, fill = color)) + 
+  geom_point(pch = 21, alpha = 0.5, size = 3) +
+  scale_fill_manual(values = c("grey", "red")) +
+  xlab("Primary (T9) VAF") + 
+  ylab("Recurrance (T1) VAF") +
   ggtitle("T1-T9") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
-  annotate("text", x = 20, y = 85, label = paste0("Primary (T9) = ", T9, 
+  annotate("text", x = 40, y = 85, label = paste0("Primary (T9) = ", T9, 
                                                   "\nRecurrance (T1) = ", T1, 
-                                                  "\nOverlap = ", T19))
+                                                  "\nOverlap = ", T19),
+           size = 6)
 T1_9_plot
 
-T5_10_plot <- ggplot(T5_10, aes(x = vaf.y, y = vaf.x)) + 
-  geom_point(pch = 21, fill = "grey", alpha = 0.5) +
-  xlab("Primary (T10)") + 
-  ylab("Recurrance (T5)") +
+T5_10_plot <- ggplot(T5_10, aes(x = vaf.y, y = vaf.x, fill = color)) + 
+  geom_point(pch = 21, alpha = 0.5, size = 3) +
+  scale_fill_manual(values = c("grey", "red")) +
+  xlab("Primary (T10) VAF") + 
+  ylab("Recurrance (T5) VAF") +
   ggtitle("T5-T10") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
-  annotate("text", x = 20, y = 85, label = paste0("Primary (T10) = ", T10, 
+  annotate("text", x = 40, y = 85, label = paste0("Primary (T10) = ", T10, 
                                                   "\nRecurrance (T5) = ", T5, 
-                                                  "\nOverlap = ", T510))
+                                                  "\nOverlap = ", T510),
+           size = 6)
 T5_10_plot
 
-T12_13_plot <- ggplot(T12_13, aes(x = vaf.y, y = vaf.x)) + 
-  geom_point(pch = 21, fill = "grey", alpha = 0.5) +
-  xlab("Primary (T13)") + 
-  ylab("Recurrance (T12)") +
+T12_13_plot <- ggplot(T12_13, aes(x = vaf.y, y = vaf.x, fill = color)) + 
+  geom_point(pch = 21, alpha = 0.5, size = 3) +
+  scale_fill_manual(values = c("grey", "red")) +
+  xlab("Primary (T13) VAF") + 
+  ylab("Recurrance (T12) VAF") +
   ggtitle("T12-T13") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
-  annotate("text", x = 20, y = 85, label = paste0("Primary (T13) = ", T13, 
+  annotate("text", x = 40, y = 85, label = paste0("Primary (T13) = ", T13, 
                                                   "\nRecurrance (T12) = ", T12, 
-                                                  "\nOverlap = ", T1213))
+                                                  "\nOverlap = ", T1213),
+           size = 6)
 T12_13_plot
 
-T15_16_plot <- ggplot(T15_16, aes(x = vaf.y, y = vaf.x)) + 
-  geom_point(pch = 21, fill = "grey", alpha = 0.5) +
-  xlab("Primary (T16)") + 
-  ylab("Recurrance (T15)") +
+T15_16_plot <- ggplot(T15_16, aes(x = vaf.y, y = vaf.x, fill = color)) + 
+  geom_point(pch = 21, alpha = 0.5, size = 3) +
+  scale_fill_manual(values = c("grey", "red")) +
+  xlab("Primary (T16) VAF") + 
+  ylab("Recurrance (T15) VAF") +
   ggtitle("T15-T16") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
-  annotate("text", x = 20, y = 85, label = paste0("Primary (T16) = ", T16, 
+  annotate("text", x = 40, y = 85, label = paste0("Primary (T16) = ", T16, 
                                                   "\nRecurrance (T15) = ", T15, 
-                                                  "\nOverlap = ", T1516))
+                                                  "\nOverlap = ", T1516),
+           size = 6)
 T15_16_plot
 
 ### Ensemble the plots

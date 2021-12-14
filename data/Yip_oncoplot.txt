@@ -1,0 +1,17 @@
+STY_code	chr1p	chr22q	NF2_mutation	NF2_SV_RNA	AKT1	SMO	KLF4	PIK3CA	TRAF7
+T1	loss	loss		fusion					
+T4	loss	loss	nonsense						
+T5	loss	loss							
+T6	loss	loss		fusion					
+T7	loss	loss	frameshift						
+T9	loss	loss	frameshift						
+T10	loss	loss		fusion					
+T11	loss	loss		fusion					
+T12	loss	loss							
+T13	loss	loss							
+T15	loss	loss							
+T16	loss	loss							
+T17	loss	loss							
+T2	loss	loss	frameshift						
+T8	loss	loss							
+T14	loss	loss							

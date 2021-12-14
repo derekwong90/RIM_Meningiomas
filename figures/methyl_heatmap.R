@@ -37,9 +37,8 @@ dat <- dat[ , master$x850k_file]
 DKFZ <- DKFZ[order(DKFZ$sample), ]
 
 ### Format NF2 mutation data
-NF2$mutation <- ifelse(NF2$NF2_mutation == "frameshift", "frameshift",
-                       ifelse(NF2$NF2_mutation == "structural_variant", "rearrangement",
-                              ifelse(NF2$NF2_SV_RNA == "fusion", "rearrangement", NA)))
+NF2$mutation <- ifelse(NF2$NF2_mutation == "frameshift" | NF2$NF2_mutation == "nonsense", "Mutation",
+                              ifelse(NF2$NF2_SV_RNA == "fusion", "Fusion", NA))
 NF2$mutation[is.na(NF2$mutation)] <- ""
 
 #Log transform data
@@ -102,10 +101,14 @@ samples$Initial.cancer.diagnosis <- factor(samples$Initial.cancer.diagnosis, lev
 data_initial <- as.matrix(samples$Initial.cancer.diagnosis)
 row.names(data_initial) <- master$x850k_file
 
-NF2$mutation <- factor(NF2$mutation, levels = c("frameshift", "rearrangement", ""),
-                       labels = c("Frameshift", "Rearrangement", ""))
+NF2$mutation <- factor(NF2$mutation, levels = c("Mutation", "Fusion", ""))
 data_NF2 <- as.matrix(NF2$mutation)
 row.names(data_NF2) <- master$x850k_file
+
+samples$methly <- factor(samples$methly, levels = c("1", "2"),
+                         labels = c("Cluster 1", "Cluster 2"))
+data_methyl <- as.matrix(samples$methly)
+row.names(data_methyl) <- master$x850k_file
 
 # Set colors
 col_fun <- colorRamp2(c(-3, 0, 3), 
@@ -116,7 +119,8 @@ col_grade <- c(I = "#FED976", II = "#FEB24C", III = "#FD8D3C")
 col_subtype <- c(Chordoid = "#A1D99B", Fibrous = "#74C476", Meningothelial = "#41AB5D", Transitional = "#238B45")
 col_recur <- c("Did Not Recur" = "grey", "Recurred" = "#fb9a99")
 col_initial <- c(ALL = "#A6CEE3", "Infant ALL" = "#B2DF8A", LBL = "#CAB2D6", Neuroblastoma = "#FDBF6F")
-col_NF2 <- c(Frameshift = "#238B45", Rearrangement = "#74C476", " " = "grey")
+col_NF2 <- c(Mutation = "#238B45", Fusion = "#74C476", " " = "grey")
+col_methyl <- c("Cluster 1" = "#FED976", "Cluster 2" = "#FD8D3C")
 
 # Set annotation layers
 top_annotation <- HeatmapAnnotation(Sex = data_sex,
@@ -126,15 +130,17 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
                                     Recurrance = data_recur,
                                     Timepoint = data_type,
                                     "NF2 Status" = data_NF2,
+                                    Methylation = data_methyl,
                                     col = list(Sex = col_sex,
                                                "Initial Diagnosis" = col_initial,
                                                Subtype = col_subtype,
                                                "WHO Grade" = col_grade,
                                                Recurrance = col_recur,
                                                Timepoint = col_type,
-                                               "NF2 Status" = col_NF2),
-                                    annotation_legend_param = list(title_gp = gpar(fontsize = 15),
-                                                                   labels_gp = gpar(fontsize = 13),
+                                               "NF2 Status" = col_NF2,
+                                               Methylation = col_methyl),
+                                    annotation_legend_param = list(title_gp = gpar(fontsize = 13),
+                                                                   labels_gp = gpar(fontsize = 11),
                                                                    Subtype = list(labels = c("Transitional", "Fibrous", "Chordoid", "Meningothelial", "NA"))),
                                     annotation_name_gp = gpar(fontsize = 15),
                                     border = TRUE,
@@ -144,8 +150,8 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
 heatmap_legend_param = list(title = "Log2beta", 
                             border = TRUE,
                             at = c(-3, 0, 3),
-                            title_gp = gpar(fontsize = 15),
-                            labels_gp = gpar(fontsize = 13),
+                            title_gp = gpar(fontsize = 13),
+                            labels_gp = gpar(fontsize = 11),
                             direction = "horizontal",
                             legend_width = unit(4, "cm"))
 
@@ -155,7 +161,7 @@ heatmap <- Heatmap(dat_top,
                    top_annotation = top_annotation,
                    heatmap_legend_param = heatmap_legend_param,
                    show_column_dend = TRUE,
-                   show_column_names = FALSE,
+                   show_column_names = TRUE,
                    show_row_dend = FALSE,
                    show_row_names = FALSE,
                    row_title_rot = 0,
@@ -182,8 +188,8 @@ row.names(DKFZ) <- c("Malignant", "Benign - 1", "Benign - 2", "Benign - 3", "Int
 ### Heatmap parameters
 heatmap_legend_DKFZ = list(title = "Score", 
                            border = TRUE,
-                           title_gp = gpar(fontsize = 15),
-                           labels_gp = gpar(fontsize = 13),
+                           title_gp = gpar(fontsize = 13),
+                           labels_gp = gpar(fontsize = 11),
                            legend_width = unit(4, "cm"),
                            direction = "horizontal")
 

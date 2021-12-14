@@ -1,0 +1,7 @@
+sample	fusion	score	filtered	donor_chr	donor_breakpoint	donor_strand	acceptor_chr	acceptor_breakpoint	acceptor_strand	total_crossing_reads	total_crossing_mts	total_crossing_sizes	total_spanning_reads	total_spanning_mts	total_spanning_sizes	donor_transcript_name	donor_exon_feature	acceptor_transcript_name	acceptor_exon_feature	fusion_protein_in_frame
+T11	NF2--ASPG	33	PASS	chr22	29639212	+	chr14	104092633	+	350	342	21	-	-	-	NF2-202	exon 3	ASPG-206	exon 2	YES
+T6	NF2--CEP170B	345.4	PASS	chr22	29642285	+	chr14	104876256	+	3629	2631	86	-	-	-	NF2-202	exon 4	CEP170B-203	exon 3	YES
+T12	PPIL2--ABCA4	22.3	PASS	chr22	21682526	+	chr1	94032043	-	62	61	16	-	-	-	PPIL2-202	exon 8	ABCA4-201	exon 27	YES
+T5	PAFAH1B1--NIPSNAP1	13.8	PASS	chr17	2594006	+	chr22	29570532	-	239	213	10	-	-	-	PAFAH1B1-202	exon 1	NIPSNAP1-201	exon 2	YES
+T1	NF2--BAG3	5.4	PASS	chr22	29642285	+	chr10	119669851	+	529	18	4	-	-	-	NF2-202	exon 4	BAG3-201	exon 2	YES
+T10	TTC32--NF2	15.9	PASS	chr2	19901706	-	chr22	29694752	+	152	64	6	-	-	-	TTC32-201	exon 1	NF2-202	exon 16	YES
