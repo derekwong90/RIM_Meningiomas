@@ -18,7 +18,7 @@ gatk <- read.delim(gatk)
 samples <- read.delim(samples)
 
 ### Order samples
-samples <- samples[order(factor(samples$Type, levels = c("Primary", "Recurrance")),
+samples <- samples[order(factor(samples$Type, levels = c("Primary", "Recurrence")),
                          factor(samples$Grade, levels = c("I", "II", "III"))), ]
 
 ### Sort and format Sequenza
@@ -75,7 +75,7 @@ samples$Sex <- factor(samples$Sex, levels = c("male", "female"),
 data_sex <- as.matrix(samples$Sex)
 row.names(data_sex) <- samples$STY_code
 
-samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrance"))
+samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrence"))
 data_type <- as.matrix(samples$Type)
 row.names(data_type) <- samples$STY_code
 
@@ -92,7 +92,7 @@ row.names(data_subtype) <- samples$STY_code
 col_fun <- colorRamp2(c(-1, -0.1, 0, 0.1, 1), 
                       c("#1f78b4", "white", "white", "white", "#e31a1c"))
 col_sex <- c(Male = "#a6cee3", Female = "#fb9a99")
-col_type <- c(Primary = "#FEE0D2", Recurrance = "#fb9a99")
+col_type <- c(Primary = "#FEE0D2", Recurrence = "#fb9a99")
 col_grade <- c(I = "#FED976", II = "#FEB24C", III = "#FD8D3C")
 col_subtype <- c(Chordoid = "#A1D99B", Fibrous = "#74C476", Meningothelial = "#41AB5D", Transitional = "#238B45")
 

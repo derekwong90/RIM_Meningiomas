@@ -12,7 +12,7 @@ samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip
 data_muts <- read.delim(file.path(path, "Yip_exomes_snps.txt"))
 samples <- read.delim(samples)
 
-### Only keep recurrances
+### Only keep Recurrences
 keep <- c("T1", "T9", "T5", "T10", "T12", "T13", "T15", "T16")
 samples <- samples[samples$STY_code %in% keep, ]
 
@@ -92,13 +92,13 @@ T1_9_plot <- ggplot(T1_9, aes(x = vaf.y, y = vaf.x, fill = color)) +
   geom_point(pch = 21, alpha = 0.5, size = 3) +
   scale_fill_manual(values = c("grey", "red")) +
   xlab("Primary (T9) VAF") + 
-  ylab("Recurrance (T1) VAF") +
+  ylab("Recurrence (T1) VAF") +
   ggtitle("T1-T9") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   annotate("text", x = 40, y = 85, label = paste0("Primary (T9) = ", T9, 
-                                                  "\nRecurrance (T1) = ", T1, 
+                                                  "\nRecurrence (T1) = ", T1, 
                                                   "\nOverlap = ", T19),
            size = 6)
 T1_9_plot
@@ -107,13 +107,13 @@ T5_10_plot <- ggplot(T5_10, aes(x = vaf.y, y = vaf.x, fill = color)) +
   geom_point(pch = 21, alpha = 0.5, size = 3) +
   scale_fill_manual(values = c("grey", "red")) +
   xlab("Primary (T10) VAF") + 
-  ylab("Recurrance (T5) VAF") +
+  ylab("Recurrence (T5) VAF") +
   ggtitle("T5-T10") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   annotate("text", x = 40, y = 85, label = paste0("Primary (T10) = ", T10, 
-                                                  "\nRecurrance (T5) = ", T5, 
+                                                  "\nRecurrence (T5) = ", T5, 
                                                   "\nOverlap = ", T510),
            size = 6)
 T5_10_plot
@@ -122,13 +122,13 @@ T12_13_plot <- ggplot(T12_13, aes(x = vaf.y, y = vaf.x, fill = color)) +
   geom_point(pch = 21, alpha = 0.5, size = 3) +
   scale_fill_manual(values = c("grey", "red")) +
   xlab("Primary (T13) VAF") + 
-  ylab("Recurrance (T12) VAF") +
+  ylab("Recurrence (T12) VAF") +
   ggtitle("T12-T13") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   annotate("text", x = 40, y = 85, label = paste0("Primary (T13) = ", T13, 
-                                                  "\nRecurrance (T12) = ", T12, 
+                                                  "\nRecurrence (T12) = ", T12, 
                                                   "\nOverlap = ", T1213),
            size = 6)
 T12_13_plot
@@ -137,13 +137,13 @@ T15_16_plot <- ggplot(T15_16, aes(x = vaf.y, y = vaf.x, fill = color)) +
   geom_point(pch = 21, alpha = 0.5, size = 3) +
   scale_fill_manual(values = c("grey", "red")) +
   xlab("Primary (T16) VAF") + 
-  ylab("Recurrance (T15) VAF") +
+  ylab("Recurrence (T15) VAF") +
   ggtitle("T15-T16") + 
   theme + 
   scale_y_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   scale_x_continuous(limits=c(-10, 100), expand = c(0,0)) + 
   annotate("text", x = 40, y = 85, label = paste0("Primary (T16) = ", T16, 
-                                                  "\nRecurrance (T15) = ", T15, 
+                                                  "\nRecurrence (T15) = ", T15, 
                                                   "\nOverlap = ", T1516),
            size = 6)
 T15_16_plot

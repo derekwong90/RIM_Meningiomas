@@ -5,7 +5,7 @@ library(circlize)
 library(ComplexHeatmap)
 
 ### Set working directories
-setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/methyl_heatmap")
+setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/Figure 3A")
 path <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/methylation"
 samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip_exome_sample_list.txt"
 NF2 <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/somatic/Yip_oncoplot.txt"
@@ -78,7 +78,7 @@ samples$Sex <- factor(samples$Sex, levels = c("male", "female"),
 data_sex <- as.matrix(samples$Sex)
 row.names(data_sex) <- master$x850k_file
 
-samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrance"))
+samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrence"))
 data_type <- as.matrix(samples$Type)
 row.names(data_type) <- master$x850k_file
 
@@ -91,9 +91,9 @@ samples$Grade <- factor(samples$Grade, levels = c("I", "II", "III"))
 data_grade <- as.matrix(samples$Grade)
 row.names(data_grade) <- master$x850k_file
 
-samples$Recurrance <- factor(samples$Recurrance, levels = c("no", "yes"),
+samples$Recurrence <- factor(samples$Recurrence, levels = c("no", "yes"),
                              labels = c("Did Not Recur", "Recurred"))
-data_recur <- as.matrix(samples$Recurrance)
+data_recur <- as.matrix(samples$Recurrence)
 row.names(data_recur) <- master$x850k_file
 
 samples$Initial.cancer.diagnosis <- factor(samples$Initial.cancer.diagnosis, levels = c("ALL", "infant ALL", "lymphoblastic lynphoma", "neuroblastoma"),
@@ -114,7 +114,7 @@ row.names(data_methyl) <- master$x850k_file
 col_fun <- colorRamp2(c(-3, 0, 3), 
                       c("#313695", "white", "#A50026"))
 col_sex <- c(Male = "#a6cee3", Female = "#fb9a99")
-col_type <- c(Primary = "#FEE0D2", Recurrance = "#fb9a99")
+col_type <- c(Primary = "#FEE0D2", Recurrence = "#fb9a99")
 col_grade <- c(I = "#FED976", II = "#FEB24C", III = "#FD8D3C")
 col_subtype <- c(Chordoid = "#A1D99B", Fibrous = "#74C476", Meningothelial = "#41AB5D", Transitional = "#238B45")
 col_recur <- c("Did Not Recur" = "grey", "Recurred" = "#fb9a99")
@@ -127,7 +127,7 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
                                     "Initial Diagnosis" = data_initial,
                                     Subtype = data_subtype,
                                     "WHO Grade" = data_grade,
-                                    Recurrance = data_recur,
+                                    Recurrence = data_recur,
                                     Timepoint = data_type,
                                     "NF2 Status" = data_NF2,
                                     Methylation = data_methyl,
@@ -135,7 +135,7 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
                                                "Initial Diagnosis" = col_initial,
                                                Subtype = col_subtype,
                                                "WHO Grade" = col_grade,
-                                               Recurrance = col_recur,
+                                               Recurrence = col_recur,
                                                Timepoint = col_type,
                                                "NF2 Status" = col_NF2,
                                                Methylation = col_methyl),

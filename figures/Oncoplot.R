@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 
 ### Set working directories
-setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/oncoplot")
+setwd("/Users/derekwong/Google Drive/Post-Doc/Yip_Exomes/Figures/Figure 1B")
 path <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/somatic"
 samples <- "/Users/derekwong/OneDrive - UHN/Post-Doc/Yip_projects/Yip_Exomes/yip_exome_sample_list.txt"
 
@@ -32,7 +32,7 @@ samples$Sex <- factor(samples$Sex, levels = c("male", "female"),
 data_sex <- as.matrix(samples$Sex)
 row.names(data_sex) <- data_onco$STY_code
 
-samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrance"))
+samples$Type <- factor(samples$Type, levels = c("Primary", "Recurrence"))
 data_type <- as.matrix(samples$Type)
 row.names(data_type) <- data_onco$STY_code
 
@@ -45,9 +45,9 @@ samples$Grade <- factor(samples$Grade, levels = c("I", "II", "III"))
 data_grade <- as.matrix(samples$Grade)
 row.names(data_grade) <- data_onco$STY_code
 
-samples$Recurrance <- factor(samples$Recurrance, levels = c("no", "yes"),
+samples$Recurrence <- factor(samples$Recurrence, levels = c("no", "yes"),
                              labels = c("Did Not Recur", "Recurred"))
-data_recur <- as.matrix(samples$Recurrance)
+data_recur <- as.matrix(samples$Recurrence)
 row.names(data_recur) <- data_onco$STY_code
 
 samples$Initial.cancer.diagnosis <- factor(samples$Initial.cancer.diagnosis, levels = c("ALL", "infant ALL", "lymphoblastic lynphoma", "neuroblastoma"),
@@ -77,7 +77,7 @@ col <- c(missense = "#33a02c", frameshift = "black", nonsense = "#E31A1C",
          splice_site = "#E31A1C", loss = "#1f78b4", fusion = "#6A3D9A",
          structural_variant = "#FF7F00", inframe_deletion = "#FFFF99")
 col_sex <- c(Male = "#a6cee3", Female = "#fb9a99")
-col_type <- c(Primary = "#FEE0D2", Recurrance = "#fb9a99")
+col_type <- c(Primary = "#FEE0D2", Recurrence = "#fb9a99")
 col_grade <- c(I = "#FED976", II = "#FEB24C", III = "#FD8D3C")
 col_subtype <- c(Chordoid = "#A1D99B", Fibrous = "#74C476", Meningothelial = "#41AB5D", Transitional = "#238B45")
 col_recur <- c("Did Not Recur" = "grey", "Recurred" = "#fb9a99")
@@ -103,7 +103,7 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
                                     "Initial Diagnosis" = data_initial,
                                     Subtype = data_subtype,
                                     "WHO Grade" = data_grade,
-                                    Recurrance = data_recur,
+                                    Recurrence = data_recur,
                                     Timepoint = data_type,
                                     "Exome Sequencing" = data_exome,
                                     "RNA Sequencing" = data_rna,
@@ -111,7 +111,7 @@ top_annotation <- HeatmapAnnotation(Sex = data_sex,
                                                "Initial Diagnosis" = col_initial,
                                                Subtype = col_subtype,
                                                "WHO Grade" = col_grade,
-                                               Recurrance = col_recur,
+                                               Recurrence = col_recur,
                                                Timepoint = col_type,
                                                "Exome Sequencing" = col_exome,
                                                "RNA Sequencing" = col_rna),
